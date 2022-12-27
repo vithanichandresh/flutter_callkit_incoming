@@ -118,8 +118,8 @@ class CallkitNotificationManager(private val context: Context) {
         val typeCall = data.getInt(EXTRA_CALLKIT_TYPE, -1)
         var smallIcon = context.applicationInfo.icon
 //        if (typeCall > 0) {
-//            smallIcon = R.drawable.ic_video
-            smallIcon = R.drawable.ic_stat_name
+            smallIcon = R.drawable.ic_video
+//            smallIcon = R.drawable.ic_stat_name
 //        } else {
 //            if (smallIcon >= 0) {
 //                smallIcon = R.drawable.ic_accept
