@@ -119,14 +119,14 @@ class CallkitNotificationManager(private val context: Context) {
         var smallIcon = context.applicationInfo.icon
 //        if (typeCall > 0) {
 //            smallIcon = R.drawable.ic_video
-//            smallIcon = R.drawable.ic_logo
+            smallIcon = R.drawable.transparent
 //        } else {
 //            if (smallIcon >= 0) {
 //                smallIcon = R.drawable.ic_accept
 //                smallIcon = R.drawable.ic_logo
 //            }
 //        }
-//        notificationBuilder.setSmallIcon(smallIcon)
+        notificationBuilder.setSmallIcon(smallIcon)
         val actionColor = data.getString(EXTRA_CALLKIT_ACTION_COLOR, "#4CAF50")
         try {
             notificationBuilder.color = Color.parseColor(actionColor)
