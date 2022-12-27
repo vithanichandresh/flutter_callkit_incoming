@@ -126,7 +126,7 @@ class CallkitNotificationManager(private val context: Context) {
                 smallIcon = R.drawable.ic_logo
             }
         }
-        notificationBuilder.setSmallIcon(smallIcon)
+//        notificationBuilder.setSmallIcon(smallIcon)
         val actionColor = data.getString(EXTRA_CALLKIT_ACTION_COLOR, "#4CAF50")
         try {
             notificationBuilder.color = Color.parseColor(actionColor)
